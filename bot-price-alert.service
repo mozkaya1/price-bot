@@ -1,0 +1,23 @@
+[Unit]
+Description=All Bot Price Check Services
+After=network.target
+
+[Service]
+Type=simple
+User=musti
+Group=musti
+WorkingDirectory=/home/musti/go-projects
+
+# Run the wrapper script
+ExecStart=/home/musti/go-projects/all-bot-wrapper-service.sh
+
+# Restart policy
+Restart=always
+RestartSec=10
+LimitNOFILE=4096
+StandardOutput=journal
+StandardError=journal
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=multi-user.target
