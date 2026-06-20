@@ -25,6 +25,8 @@ Options:
 **status**
 ```bash
 [musti@optiplex7040 go-projects]$ systemctl status bot-price-alert.service 
+```
+```bash
 ● bot-price-alert.service - All Bot Price Check Services
      Loaded: loaded (/etc/systemd/system/bot-price-alert.service; enabled; preset: disabled)
      Active: active (running) since Sat 2026-06-20 21:27:13 CEST; 3h 13min ago
@@ -65,7 +67,7 @@ Jun 21 00:39:05 optiplex7040 all-bot-wrapper-service.sh[2959374]: [2026-06-21 00
 [musti@optiplex7040 go-projects]$ sudo systemctl enable bot-price-alert.service  --now
 
 ```
-**stop service**
+**stop/start service**
 ```bash 
 [musti@optiplex7040 go-projects]$ sudo systemctl stop bot-price-alert.service 
 [musti@optiplex7040 go-projects]$ sudo systemctl start bot-price-alert.service 
