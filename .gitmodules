@@ -1,0 +1,6 @@
+[submodule "amazon"]
+	path = amazon
+	url = git@github.com:mozkaya1/amazon.git
+[submodule "bol"]
+	path = bol
+	url = git@github.com:mozkaya1/bol.git
