@@ -60,6 +60,7 @@ done
 while true ;do
 timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
+## Auto switch path according to url . amazon/bol.com .. Use your code path 
 if echo ${url} | grep -iq "bol" ; then
     cd /home/musti/go-projects/bol/
 elif echo ${url} | grep -iq "amazon"; then

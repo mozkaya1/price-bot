@@ -6,9 +6,9 @@ After=network.target
 Type=simple
 User=musti
 Group=musti
-WorkingDirectory=/home/musti/go-projects
+WorkingDirectory=/home/musti/go-projects  
 
-# Run the wrapper script
+# Run the wrapper script -- Use your script path service file
 ExecStart=/home/musti/go-projects/all-bot-wrapper-service.sh
 
 # Restart policy
